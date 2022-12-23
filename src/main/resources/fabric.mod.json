@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "flight",
+  "version": "${version}",
+
+  "name": "Flight",
+  "description": "Fly!!! enabled by clicking G by default but can be changed with a little editing, same goes for the flight speed",
+  "authors": [
+    "Trolman"
+  ],
+
+  "license": "CC0-1.0",
+  "icon": "assets/gnome/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.flight.client.Flight"
+    ]
+  },
+  "mixins": [
+    "flight.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.11",
+    "fabric-api": "*",
+    "minecraft": "~1.19.3",
+    "java": ">=17"
+  }
+}
