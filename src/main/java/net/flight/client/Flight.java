@@ -16,7 +16,7 @@ public class Flight implements ModInitializer {
 	private ModuleManager moduleManager;
 	public static final Logger LOGGER = LoggerFactory.getLogger("flight");
 	public void init(){
-		LOGGER.info("Starting gnomenheimer!");
+		LOGGER.info("Starting Flight Mod!");
 		bus = new EventBus();
 		bus.register(this);
 		moduleManager = new ModuleManager();
